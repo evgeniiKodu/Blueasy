@@ -8,7 +8,7 @@ $(document).ready(function(){
 	});
 	$(window).resize(function(){
 		var wid = $(window).width();
-		if(wid > 760 && menu.is(':hidden')) {
+		if(wid > 768 ) {
 			menu.removeAttr('style');
 		}
 	});

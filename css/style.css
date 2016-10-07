@@ -111,7 +111,6 @@ header .logo::before
 }
 .menu a
 {
-	
 	font-size: 0.875em;
 	line-height: 1.714;
 	margin: 0 10px;
@@ -140,7 +139,6 @@ header .logo::before
 }
 .hero1
 {
-	display: inline;
 	margin: 0 auto;
 	padding: 0 15px;
 	text-align: center;
@@ -148,7 +146,6 @@ header .logo::before
 }
 .hero2
 {
-	display: inline;
 	margin-top: 12px;
 	padding: 0 15px;
 	background-color: rgba(69, 80, 87, .8);
@@ -189,11 +186,13 @@ header .logo::before
 }
 .services_column
 {
-	float: left;
-	width: 23.07692307692308%;
-	padding: 40px 5px 30px;
-
+    display: inline-block;
+    width: 23.07692307692308%;
+    padding: 40px 5px 30px;
+    vertical-align: top;
+    box-sizing: border-box;
 }
+
 
 .services_column img
 {

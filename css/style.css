@@ -51,12 +51,12 @@ a
 	background-position: center center;
 	background-size: cover;
 }
-.wrap2
+.wrap1 .wrap2
 {
 	width: 100%;
 	background-color: rgba(69, 80, 87, .8);
 }
-header
+.wrap1 .wrap2 header
 {
 	font-family: 'SegoeUIBold';
 	max-width: 1170px;
@@ -65,13 +65,13 @@ header
 	padding: 0 10px;
 	text-align: justify;
 }
-header::after
+.wrap1 .wrap2 header::after
 {
 	display: inline-block;
 	width: 100%;
 	content: '';
 }
-header .logo
+.wrap1 .wrap2 header .logo
 {
 	font-size: 1.875em;
 	font-weight: bold;
@@ -80,7 +80,7 @@ header .logo
 	text-transform: uppercase;
 	color: rgb(255, 255, 255);
 }
-.logo_blue
+.wrap1 .wrap2 header .logo .logo_blue
 {
 	color: #4bcaff;
 }
@@ -97,7 +97,7 @@ header .logo
 
 }
 
-header .logo::before
+.wrap1 .wrap2 header .logo::before
 {
 	display: inline-block;
 	height: 100%;
@@ -127,7 +127,7 @@ header .logo::before
 	border: 2px solid #4bcaff;
 }
 
-.hero
+.wrap1 .hero
 {
 	max-width: 1170px;
 	font-family: 'SegoeUILight';
@@ -137,14 +137,14 @@ header .logo::before
 	text-align: center;
 	text-transform: uppercase;
 }
-.hero1
+.wrap1  .hero .hero1
 {
 	margin: 0 auto;
 	padding: 0 15px;
 	text-align: center;
 	background-color: rgba(69, 80, 87, .8);
 }
-.hero2
+.wrap1  .hero .hero2
 {
 	margin-top: 12px;
 	padding: 0 15px;
@@ -216,10 +216,7 @@ header .logo::before
 }
 .portfolio
 {
-	
-	
 	background-color: #fff;
-
 }
 .portfolio_wrap
 {
@@ -230,8 +227,6 @@ header .logo::before
 	color: #515f67;
 	background-color: #fff;
 	text-align: center;
-
-
 }
 .portfolio_wrap a
 {
@@ -242,7 +237,6 @@ header .logo::before
 {
 	font-family: 'SegoeUIBold';
 	padding: 6px 15px;
-
 }
 
 .portfolio_menu .section_header::after
@@ -699,10 +693,10 @@ footer
 
 
 @media screen and (max-width: 768px) {
-	header {height: 80px; }
-	header .menu {width: 100%; display: none; background-color: rgba(69, 80, 87, 1); position: absolute; left: 0;top:80px}
-	header .menu a { display: block; padding: 20px; font-size: 1em; color: #fff;}
-	header .menu a:hover{padding: 18px 20px;}
+	.wrap1 .wrap2 header {height: 80px; }
+	.wrap1 .wrap2 header .menu {width: 100%; display: none; background-color: rgba(69, 80, 87, 1); position: absolute; left: 0;top:80px}
+	.wrap1 .wrap2 header .menu a { display: block; padding: 20px; font-size: 1em; color: #fff;}
+	.wrap1 .wrap2 header .menu a:hover{padding: 18px 20px;}
 	.touch-menu {display: inline-block;}
 	.portfolio_menu .touch-menu {float: right;}
 	.portfolio_menu .menu {width: 100%; display: none; background-color: #515f67; margin-top: 5px; position: absolute; z-index:5;}
@@ -723,8 +717,8 @@ footer
 }
 @media screen and (max-width: 560px) {
 	.wrap1 {min-height: 700px;}
-	.hero {margin-top: 100px}
-	.services_column {width: 80%; margin: 0 auto; float: none; font-size: 1.5em;}
+	.wrap1 .hero {margin-top: 100px}
+	.services_column {width: 100%; margin: 0 auto; float: none; font-size: 1.5em;}
 	.image{min-width: 92.307692%;}
 	.default {font-size: 1.5em;}
 	.john_wrap p {font-size: 1.2em;}
